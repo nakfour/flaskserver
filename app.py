@@ -8,7 +8,7 @@ print("Flask Server")
 
 app = Flask(__name__)
 print("HTTP Server started")
-@app.route('/')
+@app.route('/',methods = ['POST', 'GET'])
 # ‘/’ URL is bound with hello_world() function.
 def launchPipeline():
     client = kfp.Client(host='http://ml-pipeline-ui:80')
