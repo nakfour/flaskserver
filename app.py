@@ -13,7 +13,7 @@ print("HTTP Server started")
 def launchPipeline():
     client = kfp.Client(host='http://ml-pipeline-ui:80')
     print(client.list_experiments())
-    run_result = client.run_pipeline(experiment_id='f0d0fad9-ebc0-42c7-a781-67bb64e17bc6', job_name='elyra-kubeflow-pytorchxx', pipeline_id='14bfa53a-7e0a-4919-a303-a65b8908247b', params=None)
+    run_result = client.run_pipeline(experiment_id='64d106b9-d17e-4ff1-a8fa-004fa3e75891', job_name='elyra-kubeflow-pytorchxx', pipeline_id='14bfa53a-7e0a-4919-a303-a65b8908247b', params=None)
     print("Sent Pipeline Run")
     print(run_result)
     return 'Pipeline Run Success'
